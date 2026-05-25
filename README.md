@@ -1,14 +1,16 @@
 # ADRD_LLM_ResearchProject
-Data &amp; Coding Repository for ADRD LLM research Project
 
-# **NHATS Round 14 Dataset Documentation**
+Data & Coding Repository for ADRD LLM research Project
 
-## **Overview of NHATS**
+# NHATS Round 14 Dataset Documentation
+
+## Overview of NHATS
+
+### Basic Info
 
 The **National Health and Aging Trends Study (NHATS)** is a nationally representative longitudinal study designed to investigate aging, disability, health, and late-life functioning among older adults in the United States. NHATS is sponsored by the National Institute on Aging (NIA) and conducted by the Johns Hopkins Bloomberg School of Public Health in collaboration with Westat.
 
 NHATS was established to better understand:
-
 - How aging affects physical and cognitive functioning
 - Disability trends among older adults
 - The social and environmental factors influencing aging
@@ -17,7 +19,7 @@ NHATS was established to better understand:
 
 The study primarily focuses on Medicare beneficiaries aged **65 years and older** in the United States.
 
-### **Key Characteristics of NHATS**
+### Key Characteristics of NHATS
 
 |**Feature**|**Description**|
 |---|---|
@@ -34,7 +36,6 @@ The study primarily focuses on Medicare beneficiaries aged **65 years and older*
 NHATS data are organized into **rounds**, where each round corresponds to one wave of annual data collection. Participants are followed longitudinally over time, allowing researchers to study aging trajectories and health transitions.
 
 The NHATS dataset contains multiple interconnected files, including:
-
 - Sample Person (SP) files
 - Other Person (OP) files
 - Tracker files
@@ -43,34 +44,26 @@ The NHATS dataset contains multiple interconnected files, including:
 - Tablet activity data
 - Income imputation files
 
-Additional official documentation can be found on the NHATS website and user guides.
-## **NHATS Round 14 Data Structure**
+Additional official documentation can be found on the [NHATS website](https://www.nhats.org/nhats/methods-documentation?id=nhats-user-guides) and user guides.
+## NHATS Round 14 Data Structure
 
-For this project, we use the **NHATS Round 14 Public Use Final Release** dataset.
+For this project, we use the **NHATS Round 14 Public Use Final Release** dataset. According to the official Round 14 README documentation, the Round 14 STATA release contains **16 files** in total, including both data files and codebook frequency files.  
+### Data Files in Round 14 Dataset
 
-According to the official Round 14 README documentation, the Round 14 STATA release contains **16 files** in total, including both data files and codebook frequency files.  
+| **File Name**                         | **Description**                                  | **Observations** | **Variables** |
+| ------------------------------------- | ------------------------------------------------ | ---------------- | ------------- |
+| `NHATS_Round_14_SP_File.dta`          | Sample Person (SP) + Facility Questionnaire data | 7,655            | 1,454         |
+| `NHATS_Round_14_OP_File.dta`          | Other Person (OP) data                           | 61,904           | 1,016         |
+| `NHATS_Round_14_Tracker_File.dta`     | Tracking information for all sampled individuals | 35,257           | 2,077         |
+| `NHATS_Round_14_Tab_Act_File.dta`     | Tablet activities data                           | 7,655            | 145           |
+| `NHATS_Round_14_Accel_Summ_File.dta`  | Accelerometry summary data                       | 480              | 76            |
+| `NHATS_Round_14_Accel_Det_File.dta`   | Accelerometry detailed data                      | 3,369            | 1,444         |
+| `NHATS_Round_14_Accel_Track_File.dta` | Accelerometry tracking information               | 7,655            | 11            |
+| `NHATS_R14_Int_Inc_Imp_File.dta`      | Interval income imputation data                  | 7,655            | 23            |
 
-### **Main Data Files in Round 14**
-
-|**File Name**|**Description**|**Observations**|**Variables**|
-|---|---|---|---|
-|`NHATS_Round_14_SP_File.dta`|Sample Person (SP) + Facility Questionnaire data|7,655|1,454|
-|`NHATS_Round_14_OP_File.dta`|Other Person (OP) data|61,904|1,016|
-|`NHATS_Round_14_Tracker_File.dta`|Tracking information for all sampled individuals|35,257|2,077|
-|`NHATS_Round_14_Tab_Act_File.dta`|Tablet activities data|7,655|145|
-|`NHATS_Round_14_Accel_Summ_File.dta`|Accelerometry summary data|480|76|
-|`NHATS_Round_14_Accel_Det_File.dta`|Accelerometry detailed data|3,369|1,444|
-|`NHATS_Round_14_Accel_Track_File.dta`|Accelerometry tracking information|7,655|11|
-|`NHATS_R14_Int_Inc_Imp_File.dta`|Interval income imputation data|7,655|23|
-
-Source: NHATS Round 14 README documentation.  
-
----
-
-### **Frequency / Codebook Files**
+### Frequency / Codebook Files
 
 NHATS also provides frequency PDF files for each dataset. These files contain:
-
 - Variable names
 - Variable labels
 - Frequency distributions
@@ -78,35 +71,25 @@ NHATS also provides frequency PDF files for each dataset. These files contain:
 - Means and summary statistics for continuous variables
 
 Examples include:
-
 - `NHATS_Round_14_SP_Frequencies.pdf`
 - `NHATS_Round_14_OP_Frequencies.pdf`
 - `NHATS_Round_14_Tracker_Frequencies.pdf`
 
 These frequency/codebook files are extremely useful for:
-
 - Understanding variable meanings
 - Identifying coding schemes
 - Data preprocessing
 - Feature engineering
 - Missing value interpretation
+## Dataset Used in This Project
 
----
+### File Used
 
-## **Dataset Used in This Project**
-
-### **File Used**
-
-```text
-NHATS_R14_Final_Release_STATA/NHATS_Round_14_SP_File.dta
-```
-
-This project primarily uses the **Sample Person (SP) File**, which is the core respondent-level dataset in NHATS Round 14.
+This project primarily uses the **Sample Person (SP) File** `NHATS_R14_Final_Release_STATA/NHATS_Round_14_SP_File.dta` which is the core respondent-level dataset in NHATS Round 14.
 
 ### **What Information Does the SP File Contain?**
 
 The SP file contains detailed information about each sampled older adult participant, including:
-
 - Demographics
 - Physical health
 - Chronic diseases
@@ -120,24 +103,14 @@ The SP file contains detailed information about each sampled older adult partici
 - Residential and living arrangements
 - Proxy interview information
 
-The file contains:
-
-- **7,655 observations (participants)**
-- **1,454 variables**
-
-as documented in the official README file.  
+The file contains: 7,655 observations (participants) and 1,454 variables as documented in the official README file.  
 
 The accompanying frequency/codebook PDF (`NHATS_Round_14_SP_Frequencies.pdf`) provides detailed descriptions and distributions for all variables.  
-
----
-
-# **Selected Variables Used in This Project**
+### Selected Variables Used in This Project
 
 The following variables were selected from the SP dataset for analysis and modeling purposes.
-
----
-
-# **1. Demographic Variables**
+#### 1. Demographic Variables
+These variables describe participants’ demographic and social background characteristics, which are important predictors of aging outcomes, disease risk, and healthcare utilization.
 
 |**Variable**|**Description**|
 |---|---|
@@ -147,23 +120,15 @@ The following variables were selected from the SP dataset for analysis and model
 |`hh14dmarstat`|Marital status|
 |`hh14livwthspo`|Lives with spouse or partner|
 
-### **Purpose**
-
-These variables describe participants’ demographic and social background characteristics, which are important predictors of aging outcomes, disease risk, and healthcare utilization.
-
----
-
-# **2. General Health Status**
+#### 2. General Health Status
+This variable measures participants’ overall perceived health condition and is widely used as a general indicator of health status in aging research.
 
 |**Variable**|**Description**|
 |---|---|
 |`hc14health`|Self-reported overall health|
 
-### **Purpose**
-
-This variable measures participants’ overall perceived health condition and is widely used as a general indicator of health status in aging research.
-
-# **3. Chronic Disease History**
+#### 3. Chronic Disease History
+These variables capture major chronic medical conditions commonly associated with aging, disability, mortality, and quality of life.
 
 |**Variable**|**Description**|
 |---|---|
@@ -177,26 +142,16 @@ This variable measures participants’ overall perceived health condition and is
 |`hc14disescn8`|History of stroke (ever)|
 |`hc14cancerty1`|History of skin cancer|
 
-### **Purpose**
-
-These variables capture major chronic medical conditions commonly associated with aging, disability, mortality, and quality of life.
-
----
-
-# **4. Fracture and Injury History**
+#### 4. Fracture and Injury History
+Fracture-related variables are important indicators of frailty, osteoporosis risk, mobility decline, and fall-related injuries in older adults.
 
 |**Variable**|**Description**|
 |---|---|
 |`hc14brokebon1`|History of hip fracture|
 |`hc14brokebon2`|History of other bone fracture|
 
-### **Purpose**
-
-Fracture-related variables are important indicators of frailty, osteoporosis risk, mobility decline, and fall-related injuries in older adults.
-
----
-
-# **5. Cognitive and Memory Health**
+#### 5. Cognitive and Memory Health
+These variables evaluate participants’ perceived cognitive functioning and memory changes, which are important for studying cognitive aging and dementia risk.
 
 |**Variable**|**Description**|
 |---|---|
@@ -204,29 +159,19 @@ Fracture-related variables are important indicators of frailty, osteoporosis ris
 |`cg14ofmemprob`|Frequency of memory problems interfering with activities|
 |`cg14memcom1yr`|Memory compared to one year ago|
 
-### **Purpose**
-
-These variables evaluate participants’ perceived cognitive functioning and memory changes, which are important for studying cognitive aging and dementia risk.
-
----
-
-# **6. Surgical and Medical Procedures**
-
-|**Variable**|**Description**|
-|---|---|
-|`hc14knesrgyr`|Knee surgery in past 12 months|
-|`hc14hipsrgyr`|Hip surgery in past 12 months|
-|`hc14catrsrgyr`|Cataract surgery in past 12 months|
-|`hc14backsrgyr`|Back or spine surgery in past 12 months|
-|`hc14hartsrgyr`|Heart surgery in past 12 months|
-
-### **Purpose**
-
+#### 6. Surgical and Medical Procedures
 These variables reflect recent major medical interventions and healthcare utilization among older adults.
 
----
+| **Variable**    | **Description**                         |
+| --------------- | --------------------------------------- |
+| `hc14knesrgyr`  | Knee surgery in past 12 months          |
+| `hc14hipsrgyr`  | Hip surgery in past 12 months           |
+| `hc14catrsrgyr` | Cataract surgery in past 12 months      |
+| `hc14backsrgyr` | Back or spine surgery in past 12 months |
+| `hc14hartsrgyr` | Heart surgery in past 12 months         |
 
-# **7. Falls and Mobility Concerns**
+#### 7. Falls and Mobility Concerns
+Falls are a major cause of disability and hospitalization in older adults. These variables help assess fall risk, mobility limitations, and fear-related activity restriction.
 
 |**Variable**|**Description**|
 |---|---|
@@ -236,13 +181,8 @@ These variables reflect recent major medical interventions and healthcare utiliz
 |`hc14faleninyr`|Fallen in the last 12 months|
 |`hc14multifall`|Fallen more than once in the last 12 months|
 
-### **Purpose**
-
-Falls are a major cause of disability and hospitalization in older adults. These variables help assess fall risk, mobility limitations, and fear-related activity restriction.
-
----
-
-# **8. Mental Health and Emotional Well-being**
+#### 8. Mental Health and Emotional Well-being
+These variables measure depressive and anxiety-related symptoms and are commonly used to evaluate mental health among aging populations.
 
 |**Variable**|**Description**|
 |---|---|
@@ -251,13 +191,9 @@ Falls are a major cause of disability and hospitalization in older adults. These
 |`hc14depresan3`|Feeling nervous, anxious, or on edge|
 |`hc14depresan4`|Unable to stop or control worrying|
 
-### **Purpose**
 
-These variables measure depressive and anxiety-related symptoms and are commonly used to evaluate mental health among aging populations.
-
----
-
-# **9. Sleep Health**
+#### 9. Sleep Health
+Sleep quality is strongly associated with cognitive function, mental health, physical health, and overall well-being in older adults.
 
 |**Variable**|**Description**|
 |---|---|
@@ -265,43 +201,17 @@ These variables measure depressive and anxiety-related symptoms and are commonly
 |`hc14trbfalbck`|Trouble falling back asleep after waking|
 |`hc14sleepmed`|Frequency of using medication to help sleep|
 
-### **Purpose**
-
-Sleep quality is strongly associated with cognitive function, mental health, physical health, and overall well-being in older adults.
-
----
-
-# **10. COVID-19 Related Variable**
+#### **10. COVID-19 Related Variable**
+This variable captures recent COVID-19 infection history, allowing researchers to investigate the impact of COVID-19 on aging-related health outcomes.
 
 |**Variable**|**Description**|
 |---|---|
 |`cv14covid`|Had COVID-19 in the last year|
 
-### **Purpose**
+# References
 
-This variable captures recent COVID-19 infection history, allowing researchers to investigate the impact of COVID-19 on aging-related health outcomes.
-
----
-
-# **Notes on Variable Coding**
-
-NHATS variables often use special codes for missing or inapplicable responses, including:
-
-|**Code**|**Meaning**|
-|---|---|
-|`-1`|Inapplicable|
-|`-8`|Don’t Know|
-|`-9`|Missing|
-|`-7`|Refused|
-
-Researchers should properly handle these values during preprocessing and statistical analysis.
-
----
-
-# **References**
-
-- NHATS Official Website: https://www.nhats.org/
-- NHATS Round 14 User Guide
-- NHATS Round 14 Public Use Data Documentation
-- NHATS Round 14 SP Frequency Codebook  
-- NHATS Round 14 README Documentation
+[1] NHATS Official Website: https://www.nhats.org/
+[2] NHATS Round 14 User Guide
+[3] NHATS Round 14 Public Use Data Documentation
+[4] NHATS Round 14 SP Frequency Codebook  
+[5] NHATS Round 14 README Documentation
