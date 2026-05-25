@@ -210,8 +210,8 @@ This variable captures recent COVID-19 infection history, allowing researchers t
 
 # References
 
-[1] NHATS Official Website: https://www.nhats.org/
-[2] NHATS Round 14 User Guide
-[3] NHATS Round 14 Public Use Data Documentation
+[1] NHATS Official Website: https://www.nhats.org/  
+[2] NHATS Round 14 User Guide  
+[3] NHATS Round 14 Public Use Data Documentation  
 [4] NHATS Round 14 SP Frequency Codebook  
-[5] NHATS Round 14 README Documentation
+[5] NHATS Round 14 README Documentation  
