@@ -7,9 +7,12 @@ Peiqi Guo, MISM, MEM<sup>1</sup>, Runzhou Liu, MS<sup>2</sup>, Shengteng Yang, M
 <sup>1</sup> The University of Texas Health Science Center at Houston, Houston, TX  
 <sup>2</sup> University of Virginia, Charlottesville, VA
 
-![The APHA 2026 poster: title and authors across the top, Objective and Background, Method and Conclusion on the left, and four results figures on the right](figures/poster_preview.png)
-
 > **In one paragraph.** We asked whether a large language model (LLM) can predict a person's dementia status at their *next* annual interview from their earlier NHATS survey records. We first narrowed about 2,000 NHATS variables to a panel of 60 using mutual information, then fine-tuned an 8-billion-parameter LLM (Qwen3-VL-8B, text only) on text versions of those 60 variables. On a held-out test set that mirrors the real mix of dementia classes, the fine-tuned LLM reached a balanced accuracy of **0.762**, compared with **0.676** for the "no change" baseline and **0.583** for the same LLM without fine-tuning. It identified **73%** of participants whose dementia class worsened by the next round. Results are from a national NHATS sample; see [Scope and limitations](#5-scope-and-limitations).
+
+
+## Contact
+
+Peiqi Guo: peiqi.guo@uth.tmc.edu
 
 ## Contents
 
@@ -472,6 +475,3 @@ Guo, P., Liu, R., Yang, S., Hu, M., Naik, A., Du, H., & Bi, K. (2026). *Using la
 
 NHATS data are available from the study at https://www.nhats.org.
 
-## Contact
-
-Peiqi Guo, MISM, MEM, The University of Texas Health Science Center at Houston (UTHealth Houston), School of Public Health.
