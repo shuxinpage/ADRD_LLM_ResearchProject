@@ -11,11 +11,6 @@ Peiqi Guo, MISM, MEM<sup>1</sup>, Runzhou Liu, MS<sup>2</sup>, Shengteng Yang, M
 
 Peiqi Guo: peiqi.guo@uth.tmc.edu
 
-> **In one paragraph.** We asked whether a large language model (LLM) can predict a person's dementia status at their *next* annual interview from their earlier NHATS survey records. We first narrowed about 2,000 NHATS variables to a panel of 60 using mutual information, then fine-tuned an 8-billion-parameter LLM (Qwen3-VL-8B, text only) on text versions of those 60 variables. On a held-out test set that mirrors the real mix of dementia classes, the fine-tuned LLM reached a balanced accuracy of **0.762**, compared with **0.676** for the "no change" baseline and **0.583** for the same LLM without fine-tuning. It identified **73%** of participants whose dementia class worsened by the next round. Results are from a national NHATS sample; see [Scope and limitations](#5-scope-and-limitations).
-
-
-
-
 ## Contents
 
 1. [Objective and background](#1-objective-and-background)
@@ -26,6 +21,9 @@ Peiqi Guo: peiqi.guo@uth.tmc.edu
 - [Appendix A: the 60 selected variables](#appendix-a-the-60-selected-variables)
 - [Appendix B: glossary](#appendix-b-glossary)
 - [References](#references) · [How to cite](#how-to-cite-this-poster) · [Contact](#contact)
+
+## Glance of Summary
+> **In one paragraph.** We asked whether a large language model (LLM) can predict a person's dementia status at their *next* annual interview from their earlier NHATS survey records. We first narrowed about 2,000 NHATS variables to a panel of 60 using mutual information, then fine-tuned an 8-billion-parameter LLM (Qwen3-VL-8B, text only) on text versions of those 60 variables. On a held-out test set that mirrors the real mix of dementia classes, the fine-tuned LLM reached a balanced accuracy of **0.762**, compared with **0.676** for the "no change" baseline and **0.583** for the same LLM without fine-tuning. It identified **73%** of participants whose dementia class worsened by the next round. Results are from a national NHATS sample; see [Scope and limitations](#5-scope-and-limitations).
 
 ## Key numbers
 
