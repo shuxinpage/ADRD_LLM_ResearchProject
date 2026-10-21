@@ -5,7 +5,7 @@
 Peiqi Guo, MISM, MEM<sup>1</sup>, Runzhou Liu, MS<sup>2</sup>, Shengteng Yang, MS<sup>1</sup>, Mengyao Hu, PhD<sup>1,3</sup>, Aanand Naik, MD<sup>1</sup>, Hongru Du, PhD<sup>2</sup> and Kaiming Bi, PhD<sup>2</sup>
 
 <sup>1</sup> The University of Texas Health Science Center at Houston, Houston, TX  
-<sup>2</sup> University of Virginia, Charlottesville, VA
+<sup>2</sup> University of Virginia, Charlottesville, VA  
 <sup>3</sup> University of Michigan - Ann Arbor, Ann Arbor, Michigan
 
 ## Contact
